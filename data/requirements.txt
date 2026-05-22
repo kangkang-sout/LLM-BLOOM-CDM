@@ -1,0 +1,9 @@
+EduData==0.0.18
+matplotlib==3.10.9
+numpy==2.4.6
+pandas==3.0.3
+Requests==2.34.2
+scikit_learn==1.8.0
+seaborn==0.13.2
+sentence_transformers==5.4.1
+torch==2.8.0
