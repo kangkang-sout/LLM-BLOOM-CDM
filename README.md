@@ -114,7 +114,8 @@ cd llm
 python gemma3.py
 ```
 
-该脚本演示了如何使用不同的提示词策略（Bloom vs SOLO 分类法）来分析教育课题。
+
+```
 
 ### 3. NCDM 与 Gemma3 SimCLR 对齐
 
