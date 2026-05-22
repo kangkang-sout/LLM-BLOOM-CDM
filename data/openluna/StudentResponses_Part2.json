@@ -1,0 +1,34 @@
+[
+  {
+    "student_id": 1001,
+    "responses": [
+      {"question_id": 1, "answer": "A", "result": "正确"},
+      {"question_id": 2, "answer": "C", "result": "错误"},
+      {"question_id": 3, "answer": "主观题答案", "result": "正确"}
+    ]
+  },
+  {
+    "student_id": 1002,
+    "responses": [
+      {"question_id": 1, "answer": "B", "result": "错误"},
+      {"question_id": 2, "answer": "D", "result": "正确"},
+      {"question_id": 3, "answer": "主观题答案", "result": "正确"}
+    ]
+  },
+  {
+    "student_id": 1003,
+    "responses": [
+      {"question_id": 1, "answer": "C", "result": "正确"},
+      {"question_id": 2, "answer": "A", "result": "错误"},
+      {"question_id": 3, "answer": "主观题答案", "result": "正确"}
+    ]
+  },
+  {
+    "student_id": 1004,
+    "responses": [
+      {"question_id": 1, "answer": "D", "result": "错误"},
+      {"question_id": 2, "answer": "B", "result": "正确"},
+      {"question_id": 3, "answer": "主观题答案", "result": "正确"}
+    ]
+  }
+]
