@@ -142,7 +142,7 @@ python llm/ncdm_gemma3_simclr_align.py \
 项目包含以下可视化结果：
 
 - **t-SNE 可视化** (`picture/T_sne.png`): 展示学生认知表示的降维分布
-- **RDGT 对比图** (`picture/rdgt_comp.png`): RDGT 模型与其他模型的对比结果
+- **RDGT 对比图** (`picture/rdgt_comp.png`): RDGT 模型融合不同LLM的对比结果
 
 ## 🔬 核心算法
 
