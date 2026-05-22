@@ -66,29 +66,9 @@ pip install -r requirements.txt
 
 ## 🔧 使用示例
 
-### 1. 运行认知诊断模型
-
-```python
-from model.ncdm import NCDM
-
-# 初始化模型
-model = NCDM(
-    num_students=1000,
-    num_items=500,
-    num_knowledge=10,
-    hidden_dim=64,
-    dropout=0.2
-)
-
-# 预测
-logits = model.predict_logits(
-    student_ids=torch.tensor([0, 1]),
-    item_ids=torch.tensor([10, 20]),
-    knowledge_mask=torch.ones(2, 10)
-)
 ```
 
-### 2. LLM 提示词实验
+###  LLM 提示词实验
 
 ```bash
 cd llm
@@ -127,15 +107,6 @@ python llm/ncdm_gemma3_simclr_align.py \
 
 ## 🔬 核心算法
 
-### NCDM 模型架构
-
-```
-学生掌握度 (Embedding) ──┐
-                         ├──→ 预测网络 → 正确率预测
-题目难度 (Embedding) ────┘
-题目区分度 (Embedding) ──┘
-```
-
 ### SimCLR 对齐流程
 
 1. 使用 NCDM 生成学生认知表示
@@ -154,27 +125,3 @@ OLLAMA_URL = "http://localhost:11434/api/chat"
 MODEL_NAME = "gemma3:27b"
 ```
 
-请确保已安装并启动 Ollama 服务：
-
-```bash
-ollama serve
-ollama pull gemma3:27b
-```
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request 来改进本项目。
-
-## 📄 许可证
-
-本项目采用 MIT 许可证。
-
-## 📚 参考文献
-
-1. Wang, F., et al. "Neural Cognitive Diagnosis for Intelligent Education Systems." AAAI 2020.
-2. Chen, P., et al. "Tracking Knowledge Proficiency of Students with Educational Data." CIKM 2017.
-3. Gao, C., et al. "Deep Learning based Knowledge Tracing." EDM 2019.
-
-## 📧 联系方式
-
-如有问题或建议，请通过 Issue 联系。
